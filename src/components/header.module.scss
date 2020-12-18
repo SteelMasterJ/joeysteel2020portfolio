@@ -28,3 +28,9 @@
 .active-nav-item {
     color: #333333;
 }
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size:10vw;
+    }
+}
