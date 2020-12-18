@@ -2,15 +2,23 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import './header.module.scss'
 import headerStyles from './header.module.scss'
+import Img from "gatsby-image";
 
 
 const Header = () => {
     const data = useStaticQuery(graphql`
-        query {
-            site {
-            siteMetadata {
-                title
+        query LogoQuery {
+            image1: file(relativePath: { eq: "sitelogo.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 100) {
+                ...GatsbyImageSharpFluid
+                }
             }
+            },
+            site {
+                siteMetadata {
+                    title
+                }
             }
         }
     `)
@@ -19,6 +27,7 @@ const Header = () => {
         <header className={headerStyles.header}>
             <h1 className={headerStyles.title}>
                 <Link to='/' className={headerStyles.title}>
+                    <Img fluid={data.image1.childImageSharp.fluid} />
                     {data.site.siteMetadata.title}
                 </Link>
             </h1>
