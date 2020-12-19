@@ -25,12 +25,13 @@ const Header = () => {
 
     return (
         <header className={headerStyles.header}>
-            <h1 className={headerStyles.title}>
-                <Link to='/' className={headerStyles.title}>
-                    <Img fluid={data.image1.childImageSharp.fluid} />
-                    {data.site.siteMetadata.title}
-                </Link>
-            </h1>
+            <div>
+                <h1 className={headerStyles.title}>
+                    <Link to='/' className={headerStyles.title}>
+                        {data.site.siteMetadata.title}
+                    </Link>
+                </h1>
+            </div>
             <nav>
                 <ul className={headerStyles.navList}>
                     <li>
