@@ -34,11 +34,11 @@ const IndexPage = () => {
         
       <Layout>
         <div className="grid-container">
-          <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" style={{ height: 90, width: 90 }}/>
+          <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
           <h2 className="grid-items">Web Developer</h2>
-          <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" style={{ height: 90, width: 90 }}/>
+          <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
           <h2 className="grid-items">Artist</h2>
-          <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" style={{ height: 90, width: 90 }}/>
+          <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
           <h2 className="grid-items">Business Associate</h2>
         </div>
         <p>Thanks for visiting my portfolio website. This site is a great starting point to showcase what web development skills (and a few life skills) I can bring to the table. Take a look around and please reach out to me directly if you would like to learn more!</p>
