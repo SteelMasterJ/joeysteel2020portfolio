@@ -620,3 +620,23 @@ html {
       font-size: 100%;
     }
   }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      align-content: center;
+      justify-content: center;
+  }
+
+  .icon-img {
+      max-height: 90px;
+  }
+
+  .grid-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px auto 0;
+    padding-left: 0;
+    font-size: 100%;
+  }
