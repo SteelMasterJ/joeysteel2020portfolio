@@ -34,12 +34,18 @@ const IndexPage = () => {
         
       <Layout>
         <div className="grid-container" style={{paddingTop: '5rem'}}>
-          <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
-          <h2 className="grid-items">Web Developer</h2>
-          <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
-          <h2 className="grid-items">Artist</h2>
-          <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
-          <h2 className="grid-items">Business Associate</h2>
+          <div className="flex-grid-item">
+            <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
+            <h2 className="grid-items">Web Developer</h2>
+          </div>
+          <div className="flex-grid-item">
+            <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
+            <h2 className="grid-items">Artist</h2>
+          </div>
+          <div className="flex-grid-item">
+            <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
+            <h2 className="grid-items">Business Associate</h2>
+          </div>
         </div>
       </Layout>
     )

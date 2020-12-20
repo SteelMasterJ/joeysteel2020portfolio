@@ -626,10 +626,17 @@ html {
 
   .grid-container {
       display: grid;
-      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto;
       align-content: center;
-      justify-content: center;
+      justify-content: space-evenly;
       margin-bottom: 3rem;
+  }
+
+  .flex-grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 
   .icon-img {
@@ -653,6 +660,7 @@ html {
     margin: auto 10px auto 0;
     padding-left: 0;
     font-size: 100%;
+    padding-top: 1rem;
   }
 
   .profile-pic {
