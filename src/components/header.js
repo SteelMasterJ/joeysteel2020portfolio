@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import './header.module.scss'
 import headerStyles from './header.module.scss'
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
         query LogoQuery {
             image1: file(relativePath: { eq: "sitelogo.png" }) {
             childImageSharp {
-                fluid(maxWidth: 100) {
+                fluid(maxWidth: 90) {
                 ...GatsbyImageSharpFluid
                 }
             }
