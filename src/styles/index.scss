@@ -682,5 +682,15 @@ html {
       font-size: .80rem;
       margin-bottom: .0005rem;
       margin-top: 0;
-      text-decoration: none;
+  }
+
+  .about-items {
+      display: grid;
+      grid-template-columns: auto 201px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .about-items {
+        grid-template-columns: auto;
+    }
   }
