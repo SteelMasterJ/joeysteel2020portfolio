@@ -22,8 +22,8 @@ const About = () => {
                 <div style={{marginRight: "4rem"}}>
                     <h1>Joseph Walker Steel IV</h1>
                     <Img fluid={data.image1.childImageSharp.fluid} className='profile-pic'/>
-                    <p>Change is constant, especially now, and the world needs people capable and willing to embrace this dynamic.</p>
-                    <p>My name is Joey, and I'm proud to say I'm a lifelong learner. Some like to call this a 'growth mindset', but I like to say its more of an outlook on life that embraces the fragility of every moment, and cherishes the endless chase toward self-betterment. I've spent most of my career building business management and 'soft skills', and in the last year I've taken on my next challenge, web development. Please feel free to reach out if you would like to talk about how my unique skill set can help you.</p>
+                    <p style={{color: "#555"}}>Change is constant, especially now, and the world needs people capable and willing to embrace this dynamic.</p>
+                    <p style={{color: "#555"}}>My name is Joey, and I'm proud to say I'm a lifelong learner. Some like to call this a 'growth mindset', but I like to say its more of an outlook on life that embraces the fragility of every moment, and cherishes the endless chase toward self-betterment. I've spent most of my career building business management and 'soft skills', and in the last year I've taken on my next challenge, web development. Please feel free to reach out if you would like to talk about how my unique skill set can help you.</p>
                 </div>
                 <div>
                     <h3 style={{marginBottom: ".2rem"}}>Skills & Tools</h3>
@@ -31,7 +31,7 @@ const About = () => {
                         <li className="skills-li">JavaScript</li>
                         <li className="skills-li">CSS</li>
                         <li className="skills-li">HTML</li>
-                        <li className="skills-li">node.js</li>
+                        <li className="skills-li">Node.js</li>
                         <li className="skills-li">Git</li>
                         <li className="skills-li">React</li>
                         <li className="skills-li">npm</li>
@@ -46,6 +46,8 @@ const About = () => {
                         <li className="skills-li">Backpacking</li>
                         <li className="skills-li">Guitar</li>
                     </ul>
+                    <h3>Contact</h3>
+                    <p style={{color: "#555"}}>joseph.steel.iv@gmail.com</p>
                 </div>
             </div>
         </Layout>
