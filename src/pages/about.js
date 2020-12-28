@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from "gatsby-image";
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
     const data = useStaticQuery(graphql`
@@ -27,27 +28,34 @@ const About = () => {
                 </div>
                 <div>
                     <h3 style={{marginBottom: ".2rem"}}>Skills & Tools</h3>
-                    <ul>
-                        <li className="skills-li">JavaScript</li>
-                        <li className="skills-li">CSS</li>
-                        <li className="skills-li">HTML</li>
-                        <li className="skills-li">Node.js</li>
-                        <li className="skills-li">Git</li>
-                        <li className="skills-li">React</li>
-                        <li className="skills-li">npm</li>
-                        <li className="skills-li">Gatsby</li>
-                        <li className="skills-li">Bootstrap</li>
-                        <li className="skills-li">APIs/GraphQL</li>
-                        <li className="skills-li">Express</li>
-                        <li className="skills-li">Adobe Illustrator/XD/Photoshop</li>
-                        <li className="skills-li">Visual Studio Code</li>
-                        <li className="skills-li">Figma</li>
-                        <li className="skills-li">Drums</li>
-                        <li className="skills-li">Backpacking</li>
-                        <li className="skills-li">Guitar</li>
-                    </ul>
+                    <Fade right cascade>
+                        <ul>
+                            <li className="skills-li">JavaScript</li>
+                            <li className="skills-li">CSS</li>
+                            <li className="skills-li">HTML</li>
+                            <li className="skills-li">Node.js</li>
+                            <li className="skills-li">Git</li>
+                            <li className="skills-li">React</li>
+                            <li className="skills-li">npm</li>
+                            <li className="skills-li">Gatsby</li>
+                            <li className="skills-li">Bootstrap</li>
+                            <li className="skills-li">APIs/GraphQL</li>
+                            <li className="skills-li">Express</li>
+                            <li className="skills-li">Adobe Illustrator/XD/Photoshop</li>
+                            <li className="skills-li">Visual Studio Code</li>
+                            <li className="skills-li">Figma</li>
+                            <li className="skills-li">Drums</li>
+                            <li className="skills-li">Backpacking</li>
+                            <li className="skills-li">Guitar</li>
+                        </ul>
+                    </Fade>
+                    
+                    
                     <h3>Contact</h3>
-                    <p style={{color: "#555"}}>joseph.steel.iv@gmail.com</p>
+                    <Fade right>
+                        <p style={{color: "#555"}}>joseph.steel.iv@gmail.com</p>
+                    </Fade>
+                    
                 </div>
             </div>
         </Layout>
