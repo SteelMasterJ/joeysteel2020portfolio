@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from "gatsby-image";
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const About = () => {
     const data = useStaticQuery(graphql`
@@ -52,9 +53,9 @@ const About = () => {
                     
                     
                     <h3>Contact</h3>
-                    <Fade right>
+                    <Slide right>
                         <p style={{color: "#555"}}>joseph.steel.iv@gmail.com</p>
-                    </Fade>
+                    </Slide>
                     
                 </div>
             </div>
