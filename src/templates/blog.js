@@ -20,7 +20,7 @@ const Blog = (props) => {
     return (
         <Layout>
             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.subtitle}</p>
+            <p style={{fontStyle: "italic"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
             <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
         </Layout>
     )
