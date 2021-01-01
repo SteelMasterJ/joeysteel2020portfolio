@@ -3,6 +3,12 @@ title: "Full Stack Course Application"
 subtitle: "A full stack javascript project that manages courses and allows verified users to update and manage their courses"
 ---
 
+## Technologies Used
+
+1. Gatsby
+2. GraphQL
+3. React
+
 ![Full Stack App](../images/FullStack550-550.png)
 
 ![Full Stack App 2](../images/FullStack1200-550.png)
@@ -12,9 +18,3 @@ subtitle: "A full stack javascript project that manages courses and allows verif
 ![Full Stack App 4](../images/FullStack4Layout1200-550.png)
 
 ![Full Stack App 5](../images/FullStack5Layout1200-550.png)
-
-## Technologies Used
-
-1. Gatsby
-2. GraphQL
-3. React

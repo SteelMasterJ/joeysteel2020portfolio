@@ -704,3 +704,30 @@ html {
   .link-style:hover {
     color: purple;
   }
+
+  .project-body img {
+    border: 5px solid black;
+  }
+
+  .project-body ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .project-body li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #555;
+    font-size: .9rem;
+  }
+
+  .project-body h2 {
+    margin-bottom: .6rem;
+  }
+
+  .project-body {
+    text-align: center;
+  }
