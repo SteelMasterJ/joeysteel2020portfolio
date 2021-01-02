@@ -2,6 +2,7 @@
 title: "Full Stack Course Application"
 subtitle: "A full stack javascript project that manages courses and allows verified users to update and manage their courses"
 projectlink: "https://github.com/SteelMasterJ/Full-Stack-Course-Library-App" 
+technologies: ["Gatsby", "GraphQL", "NODEJS"]
 ---
 
 ![Full Stack App](../images/FullStack550-550.png)

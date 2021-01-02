@@ -710,27 +710,20 @@ html {
     text-align: left;
   }
 
-  .project-body ol {
+  .project-tech ul {
     list-style-type: none;
     margin-top: 0;
     margin-left: 0;
     padding: 0;
   }
 
-  .project-body li {
+  .project-tech li {
     margin-top: 0;
+    padding: 0;
     margin-bottom: 0;
     padding: 0;
     color: #555;
     font-size: .9rem;
-  }
-
-  .project-body h2 {
-    margin-bottom: .6rem;
-  }
-
-  .project-body {
-    text-align: left;
   }
   
   .button-link {
