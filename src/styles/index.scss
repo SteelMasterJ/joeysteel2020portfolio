@@ -707,6 +707,7 @@ html {
 
   .project-body img {
     border: 5px solid black;
+    text-align: left;
   }
 
   .project-body ol {
@@ -729,5 +730,13 @@ html {
   }
 
   .project-body {
-    text-align: center;
+    text-align: left;
+  }
+  
+  .button-link {
+    color: white;
+    background: #333;
+    padding: 0.85em 1em;
+    border: none;
+    margin-bottom: 2rem;
   }
