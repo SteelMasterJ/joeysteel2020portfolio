@@ -711,19 +711,16 @@ html {
   }
 
   .project-tech ul {
-    list-style-type: none;
     margin-top: 0;
     margin-left: 0;
     padding: 0;
   }
 
   .project-tech li {
-    margin-top: 0;
-    padding: 0;
-    margin-bottom: 0;
-    padding: 0;
+    list-style-position: inside;
+    margin: 0;
+    font-size: .80rem;
     color: #555;
-    font-size: .9rem;
   }
   
   .button-link {

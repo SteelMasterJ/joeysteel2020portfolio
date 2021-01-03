@@ -21,20 +21,22 @@ export const query = graphql`
 const Blog = (props) => {
     return (
         <Layout>
-            <div>
-                <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                <p style={{fontStyle: "italic", color: "#555"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
-            </div>
-            <div className="project-tech">
-                <h3>Technologies</h3>
-                {props.data.markdownRemark.frontmatter.technologies.map((tech) => {
-                    return (
-                        <ul>
-                        <li>{tech}</li>             
-                        </ul>
-                    )
-                })}
-                <Link to={props.data.markdownRemark.frontmatter.projectlink} target="_blank"><button className="button-link">Click here to see the project!</button></Link>
+            <div className="about-items">
+                <div style={{marginRight: "4rem"}}>
+                    <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                    <p style={{fontStyle: "italic", color: "#555"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
+                </div>
+                <div className="project-tech">
+                    <h3 style={{marginBottom: ".2rem"}}>Technologies</h3>
+                    <ul>
+                        {props.data.markdownRemark.frontmatter.technologies.map((tech) => {
+                            return (
+                                    <li className="skills-li" style={{marginBottom: ".2rem"}}>{tech}</li>             
+                            )
+                        })}
+                    </ul>
+                    <Link to={props.data.markdownRemark.frontmatter.projectlink} target="_blank"><button className="button-link">Click here to see it!</button></Link>
+                </div>
             </div>
             
             <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className="project-body"></div>
