@@ -27,7 +27,7 @@ const Blog = (props) => {
                     <p style={{fontStyle: "italic", color: "#555"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
                 </div>
                 <div className="project-tech">
-                    <h3 style={{marginBottom: ".2rem"}}>Technologies</h3>
+                    <h3 style={{marginBottom: ".75rem"}}>Technologies</h3>
                     <ul>
                         {props.data.markdownRemark.frontmatter.technologies.map((tech) => {
                             return (

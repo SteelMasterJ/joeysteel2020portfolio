@@ -1,6 +1,8 @@
 ---
 title: "Random Quote Generator"
 subtitle: "A simple javascript project that randomly displays a Mitch Hedberg quote"
+projectlink: "https://practical-noyce-3d269f.netlify.app/" 
+technologies: ["JavaScript", "CSS", "HTML"]
 ---
 
 ![Quote Generator](../images/Quotes550-550.png)
