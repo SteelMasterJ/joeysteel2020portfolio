@@ -23,11 +23,11 @@ const Blog = (props) => {
         <Layout>
             <div className="about-items">
                 <div style={{marginRight: "4rem"}}>
-                    <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                    <h1 style={{color: "black"}}>{props.data.markdownRemark.frontmatter.title}</h1>
                     <p style={{fontStyle: "italic", color: "#555"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
                 </div>
                 <div className="project-tech">
-                    <h3 style={{marginBottom: ".75rem"}}>Technologies</h3>
+                    <h3 style={{marginBottom: ".75rem", color: "black"}}>Technologies</h3>
                     <ul>
                         {props.data.markdownRemark.frontmatter.technologies.map((tech) => {
                             return (
