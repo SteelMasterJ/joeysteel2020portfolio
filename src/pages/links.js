@@ -12,14 +12,25 @@ const LinksPage = () => {
                       ...GatsbyImageSharpFluid
                   }
               }
-          }
+          },
+          image2: file(relativePath: { eq: "cv.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 550) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
       }
   `)
 
     return (
         <Layout>
           <h1>Links to stuff.</h1>
-          <a href="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" rel="noreferrer" target="_blank" className="link-style">My Band "Slow Fix" On Spotify</a>
+          <h4>My Resume</h4>
+          <Link to="https://drive.google.com/file/d/1zMw1cJu4z47vOK-JiAYSbt_Pm7L-EHKT/view?usp=sharing" target="_blank">
+            <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV"/>
+          </Link>
+          <h4>My Band "Slow Fix" On Spotify</h4>
           <Link to="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" target="_blank">
             <Img fluid={data.image1.childImageSharp.fluid} className='profile-pic' alt="Slow Fix Promo"/>
           </Link>
