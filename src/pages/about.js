@@ -43,6 +43,7 @@ const About = () => {
                             <li className="skills-li">APIs/GraphQL</li>
                             <li className="skills-li">Express</li>
                             <li className="skills-li">Adobe Illustrator/XD/Photoshop</li>
+                            <li className="skills-li">jQuery</li>
                             <li className="skills-li">Visual Studio Code</li>
                             <li className="skills-li">Figma</li>
                             <li className="skills-li">Drums</li>
