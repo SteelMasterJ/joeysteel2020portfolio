@@ -28,7 +28,7 @@ const LinksPage = () => {
           <h1>Links to stuff.</h1>
           <h4>My Resume</h4>
           <Link to="https://drive.google.com/file/d/1zMw1cJu4z47vOK-JiAYSbt_Pm7L-EHKT/view?usp=sharing" target="_blank">
-            <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV"/>
+            <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV" style={{border: "none"}}/>
           </Link>
           <h4>My Band "Slow Fix" On Spotify</h4>
           <Link to="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" target="_blank">
