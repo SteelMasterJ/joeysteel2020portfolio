@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Head from '../components/head'
 
 
 import Layout from '../components/layout'
@@ -21,7 +22,8 @@ export const query = graphql`
 const Blog = (props) => {
     return (
         <Layout>
-            <div className="about-items">
+            <Head title={props.data.markdownRemark.frontmatter.title} />            
+                <div className="about-items">
                 <div style={{marginRight: "4rem"}}>
                     <h1 style={{color: "black"}}>{props.data.markdownRemark.frontmatter.title}</h1>
                     <p style={{fontStyle: "italic", color: "#555"}}>{props.data.markdownRemark.frontmatter.subtitle}</p>
