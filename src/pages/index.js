@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import Img from "gatsby-image";
+import Head from '../components/head'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const IndexPage = () => {
     return (
         
       <Layout>
+        <Head title="Home" />
         <div className="grid-container" style={{paddingTop: '5rem'}}>
           <div className="flex-grid-item">
             <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />

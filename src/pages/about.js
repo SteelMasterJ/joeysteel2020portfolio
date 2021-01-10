@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Img from "gatsby-image";
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import Head from '../components/head'
 
 const About = () => {
     const data = useStaticQuery(graphql`
@@ -20,6 +21,7 @@ const About = () => {
 
     return (
         <Layout>
+            <Head title="About" />
             <div className="about-items">
                 <div style={{marginRight: "4rem"}}>
                     <h1>Joseph Walker Steel IV</h1>
