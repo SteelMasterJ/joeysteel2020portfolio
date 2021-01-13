@@ -10,9 +10,3 @@ technologies: ["JavaScript", "CSS", "HTML"]
 ![Quote Generator 2](../images/quotes1200x550.png)
 
 ![Quote Generator 3](../images/quoteslayout1200-550.png)
-
-## Technologies Used
-
-1. Gatsby
-2. GraphQL
-3. React
