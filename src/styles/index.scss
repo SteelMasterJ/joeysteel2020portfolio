@@ -697,12 +697,15 @@ html {
   }
 
   .link-style {
+    color: #777;
+  }
+
+  .link-style:link {
     text-decoration: none;
-    color: #666;
   }
 
   .link-style:hover {
-    color: purple;
+    color: #999;
   }
 
   .project-body img {
