@@ -8,9 +8,9 @@ const Footer = () => {
         <footer className={footerStyles.footer}>
             <small className={footerStyles.small}>
                 joeysteel.com ©2021
-                <SocialIcon url="https://www.linkedin.com/in/joseph-steel-6271a955/" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
-                <SocialIcon url="https://github.com/SteelMasterJ" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
-                <SocialIcon url="mailto:joseph.steel.iv@gmail.com" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
+                <SocialIcon url="https://www.linkedin.com/in/joseph-steel-6271a955/" className="social-icon" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
+                <SocialIcon url="https://github.com/SteelMasterJ" className="social-icon" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
+                <SocialIcon url="mailto:joseph.steel.iv@gmail.com" className="social-icon" style={{ height: 30, width: 30, marginLeft: ".6rem"}}/>
             </small>
         </footer>
     )
