@@ -30,8 +30,8 @@ const LinksPage = () => {
             <h1>Links to stuff.</h1>
             
             <Link to="https://drive.google.com/file/d/1zMw1cJu4z47vOK-JiAYSbt_Pm7L-EHKT/view?usp=sharing" target="_blank" className="link-style">
-                <h4 style={{marginBottom: ".4rem", marginLeft: "1.4rem"}}>My Resume</h4>
-                <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV" style={{border: "none"}}/>
+                <h4 style={{marginBottom: ".4rem"}}>My Resume</h4>
+                <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV" style={{border: "none", marginLeft: "-1.4rem"}}/>
             </Link>
             
             <Link to="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" target="_blank" className="link-style">
