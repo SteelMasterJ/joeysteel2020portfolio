@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Joey Steel",
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: ["gatsby-plugin-styled-components", 
             "gatsby-plugin-react-helmet",
             "gatsby-plugin-sass",

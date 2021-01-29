@@ -3,5 +3,7 @@
 }
 
 .small {
+    display: flex;
+    flex-direction: row-reverse;
     color: black;
 }
