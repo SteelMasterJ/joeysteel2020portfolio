@@ -40,6 +40,7 @@ const About = () => {
                             <li className="skills-li">Git</li>
                             <li className="skills-li">React</li>
                             <li className="skills-li">npm</li>
+                            <li className="skills-li">Next.js</li>
                             <li className="skills-li">Gatsby</li>
                             <li className="skills-li">Bootstrap</li>
                             <li className="skills-li">APIs/GraphQL</li>
