@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Img from "gatsby-image";
 import Head from '../components/head'
@@ -35,20 +35,22 @@ const IndexPage = () => {
         
       <Layout>
         <Head title="Home" />
-        <div className="grid-container" style={{paddingTop: '5rem'}}>
-          <div className="flex-grid-item">
-            <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
-            <h2 className="grid-items">Web Developer</h2>
+        <Link to='/about' style={{textDecoration: "none"}}>
+          <div className="grid-container" style={{paddingTop: '5rem'}}>
+            <div className="flex-grid-item">
+              <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
+              <h2 className="grid-items" style={{color: "black"}}>Web Developer</h2>
+            </div>
+            <div className="flex-grid-item">
+              <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
+              <h2 className="grid-items" style={{color: "black"}}>Artist</h2>
+            </div>
+            <div className="flex-grid-item">
+              <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
+              <h2 className="grid-items" style={{color: "black"}}>Business Associate</h2>
+            </div>
           </div>
-          <div className="flex-grid-item">
-            <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
-            <h2 className="grid-items">Artist</h2>
-          </div>
-          <div className="flex-grid-item">
-            <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
-            <h2 className="grid-items">Business Associate</h2>
-          </div>
-        </div>
+        </Link>
       </Layout>
     )
 }
