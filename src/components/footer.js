@@ -35,9 +35,9 @@ const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
             <small className={footerStyles.small}>
-                <Link to="mailto:joseph.steel.iv@gmail.com" target="_blank" >
+                <a href="mailto:joseph.steel.iv@gmail.com">
                     <Img fluid={data.image3.childImageSharp.fluid} alt="Email" className="social-icon" style={{ height: 30, width: 30}} />
-                </Link>
+                </a>
                 <Link to="https://github.com/SteelMasterJ" target="_blank" >
                     <Img fluid={data.image2.childImageSharp.fluid} alt="Gihub" className="social-icon" style={{ height: 30, width: 30, marginRight: ".6rem"}}/>
                 </Link>
