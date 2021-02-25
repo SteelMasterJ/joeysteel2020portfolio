@@ -29,7 +29,7 @@ const LinksPage = () => {
             <Head title="Links" />
             <h1>Links to stuff.</h1>
             
-            <Link to="https://drive.google.com/file/d/1zMw1cJu4z47vOK-JiAYSbt_Pm7L-EHKT/view?usp=sharing" target="_blank" className="link-style">
+            <Link to="https://docs.google.com/document/d/1MXtAspclKKkcOSu9L5TZgQZmOr-Ep_IAriPMn7QSSpc/edit?usp=sharing" target="_blank" className="link-style">
                 <h4 style={{marginBottom: ".4rem"}}>My Resume</h4>
                 <Img fluid={data.image2.childImageSharp.fluid} className='profile-pic' alt="CV" style={{border: "none", marginLeft: "-1.4rem"}}/>
             </Link>
