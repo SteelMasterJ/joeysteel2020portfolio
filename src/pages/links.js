@@ -20,7 +20,14 @@ const LinksPage = () => {
                     ...GatsbyImageSharpFluid
                 }
             }
-        }
+          },
+          image3: file(relativePath: { eq: "FrostyPromo.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 550) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+          }
       }
   `)
 
@@ -37,6 +44,11 @@ const LinksPage = () => {
             <Link to="https://open.spotify.com/artist/4cncWMR1Es6HRLdr2rSW9e" target="_blank" className="link-style">
                 <h4 style={{marginBottom: ".4rem"}}>My Band "Slow Fix" On Spotify</h4>
                 <Img fluid={data.image1.childImageSharp.fluid} className='profile-pic' alt="Slow Fix Promo"/>
+            </Link>
+
+            <Link to="https://open.spotify.com/artist/66ad2qQBIYXaTVvdO5zEbl" target="_blank" className="link-style">
+                <h4 style={{marginBottom: ".4rem"}}>My Other Band "Frosty Brewster" On Spotify</h4>
+                <Img fluid={data.image3.childImageSharp.fluid} className='profile-pic' alt="Frosty Brewster Promo"/>
             </Link>
         </Layout>
     )
