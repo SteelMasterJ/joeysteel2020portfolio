@@ -35,22 +35,27 @@ const IndexPage = () => {
         
       <Layout>
         <Head title="Home" />
-        <Link to='/about' style={{textDecoration: "none"}}>
+
           <div className="grid-container" style={{paddingTop: '5rem'}}>
             <div className="flex-grid-item">
-              <Img fluid={data.image1.childImageSharp.fluid} className="icon-img grid-items" />
-              <h2 className="grid-items" style={{color: "black"}}>Web Developer</h2>
+              <Link to='/projects' style={{textDecoration: "none"}}>
+                <Img fluid={data.image1.childImageSharp.fluid} className="grid-items icon-img" />
+                <h2 className="grid-items" style={{color: "black"}}>Web Developer</h2>
+              </Link>
             </div>
             <div className="flex-grid-item">
-              <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
-              <h2 className="grid-items" style={{color: "black"}}>Artist</h2>
+              <Link to='/about' style={{textDecoration: "none"}}>
+                <Img fluid={data.image2.childImageSharp.fluid} className="icon-img grid-items" />
+                <h2 className="grid-items" style={{color: "black"}}>Artist</h2>
+              </Link>
             </div>
             <div className="flex-grid-item">
-              <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
-              <h2 className="grid-items" style={{color: "black"}}>Business Associate</h2>
+              <Link to='/about' style={{textDecoration: "none"}}>
+                <Img fluid={data.image3.childImageSharp.fluid} className="icon-img grid-items" />
+                <h2 className="grid-items" style={{color: "black"}}>Business Associate</h2>
+              </Link>
             </div>
           </div>
-        </Link>
       </Layout>
     )
 }
