@@ -3,6 +3,7 @@ import './footer.module.scss'
 import footerStyles from './footer.module.scss'
 import {Link, graphql, useStaticQuery } from 'gatsby'
 import Img from "gatsby-image";
+import { year } from "../js/date";
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -44,7 +45,7 @@ const Footer = () => {
                 <Link to="https://www.linkedin.com/in/joseph-steel-6271a955/" target="_blank" >
                     <Img fluid={data.image1.childImageSharp.fluid} alt="LinkedIn" className="social-icon" style={{ height: 30, width: 30,  marginRight: ".6rem", marginLeft: ".6rem"}} />
                 </Link>
-                joeysteel.com ©2021
+                joeysteel.com ©{ year }
             </small>
         </footer>
     )
